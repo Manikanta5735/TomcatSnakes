@@ -21,6 +21,9 @@ steps:
 - script: sudo apt update && sudo apt install openjdk-8-jdk && java -version
   displayName: 'Installing openjdk 8 and Checking it'
 
+- script: ls -al && chmod 700 build.sh && sudo bash ./build.sh && ls -al
+  displayName: 'Run the build script'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
