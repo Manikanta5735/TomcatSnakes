@@ -15,6 +15,9 @@ steps:
 
 - script: ls -al && pwd
 
+- script: echo "The Build id is $(Build.BuildId) and Build Number is $(Build.BuildNumber)"
+  displayName: 'Displaying Build ID & Build Number'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
