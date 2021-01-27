@@ -19,7 +19,7 @@ steps:
   displayName: 'Displaying Build ID & Build Number'
 
 - script: sudo apt update && sudo apt install openjdk-8-jdk && java -version
- displalyName: 'Open JDK & Checking it'
+  displalyName: 'Installing openjdk 8 and Checking it'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
